@@ -56,6 +56,7 @@
                   </button>
                 </span>
                 <input
+                  id="searchInput"
                   type="search"
                   name="Search"
                   placeholder="Search..."
@@ -80,12 +81,34 @@
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
         ></div>
       </div>
+
+      <!-- Open the modal using ID.showModal() method -->
+      <button id="showButtonData" class="btn hidden" onclick="custom_modal.showModal()">open modal</button>
+      <dialog id="custom_modal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+          <div id="modal_view">
+
+          </div>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+
+      
     </main>
-<br><br>
+    <br /><br />
     <footer>
       <footer class="footer bg-base-200 text-base-content p-10">
         <aside>
-          <img src="./image/programming-ys.jpg" class="h-[50px] w-[50px]" alt="">
+          <img
+            src="./image/programming-ys.jpg"
+            class="h-[50px] w-[50px]"
+            alt=""
+          />
           <p>
             Programming-YS
             <br />
